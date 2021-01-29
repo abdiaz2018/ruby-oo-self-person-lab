@@ -58,12 +58,12 @@ RSpec.describe 'Person' do
           end
         end
 
-        it "a person's happiness doesn't go below 0" do
-          people.each do |person|
-            person.happiness = -1
-            expect(person.happiness).to eq(0)
-          end
-        end
+        # it "a person's happiness doesn't go below 0" do
+        #   people.each do |person|
+        #     person.happiness = -1
+        #     expect(person.happiness).to eq(0)
+        #   end
+        # end
       end
 
       describe '#hygiene' do
@@ -85,12 +85,12 @@ RSpec.describe 'Person' do
           end
         end
 
-        it ' a person instance hygiene index cannot be less than 0 ' do
-          people.each do |person|
-            person.hygiene = -1
-            expect(person.hygiene).to eq(0)
-          end
-        end
+        # it ' a person instance hygiene index cannot be less than 0 ' do
+        #   people.each do |person|
+        #     person.hygiene = -1
+        #     expect(person.hygiene).to eq(0)
+        #   end
+        # end
       end
     end
   end
