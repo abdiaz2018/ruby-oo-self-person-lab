@@ -39,4 +39,7 @@ class Person
     def clean?
         hygiene > 7
     end
+    def get_paid
+        @bank_account + 100
+    end
 end
